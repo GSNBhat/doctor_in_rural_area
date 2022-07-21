@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:padding="16dp"
+        tools:context=".Write_page_2">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:id="@+id/userid"
+            android:layout_marginTop="20dp"
+            android:text="  ID : "
+            android:textSize="50px"
+            android:textColor="@color/background_white"
+            android:padding="10px"
+            />
+
+        <TextView
+            android:id="@+id/useridvalue"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_alignLeft="@id/userid"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="21dp"
+            android:gravity="left"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:layout_below="@+id/userid"
+            android:layout_marginTop="20dp"
+            android:padding="10px"
+            android:text=" NAME : "
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/usernamevalue"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_below="@id/useridvalue"
+            android:layout_alignLeft="@id/tagid"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="21dp"
+            android:gravity="left"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/usersurname"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="21dp"
+            android:padding="10px"
+            android:text=" ROLL NO : "
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/usersurnamevalue"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_below="@id/usernamevalue"
+            android:layout_alignLeft="@id/usersurname"
+            android:layout_marginLeft="90dp"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/usermarks"
+            android:layout_width="220px"
+            android:layout_height="100px"
+            android:layout_below="@+id/usersurname"
+            android:layout_marginTop="26dp"
+            android:padding="10px"
+            android:text="MARKS : "
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/usermarksvalue"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_below="@id/usersurnamevalue"
+            android:layout_alignLeft="@id/usermarks"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="26dp"
+            android:gravity="left"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tagid"
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:layout_below="@+id/usermarks"
+            android:layout_marginTop="26dp"
+            android:padding="10px"
+            android:text="TAG ID : "
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tagidvalue"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_below="@id/usermarksvalue"
+            android:layout_alignLeft="@id/tagid"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="29dp"
+            android:gravity="left"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageset"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tagidvalue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageset"
+            android:text="YES"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/background_white"
+            android:background="@color/colorprimary"
+            android:id="@+id/yes" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/yes"
+            android:layout_below="@id/imageset"
+            android:layout_marginTop="20dp"
+            android:text="NO"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:id="@+id/no" />
+
+    </RelativeLayout>
+</ScrollView>

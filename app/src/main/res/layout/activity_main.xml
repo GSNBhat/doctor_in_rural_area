@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="275dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:src="@mipmap/nfclogo11" />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/username"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="50dp"
+        tools:ignore="ObsoleteLayoutParam" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_on_primary"
+        android:hint="   USER NAME"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="  PASSWORD"
+        android:textColor="@color/design_default_color_on_primary"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/design_default_color_on_primary"
+        android:textColor="@color/design_default_color_on_primary"
+        android:text="submit"/>
+
+
+
+</LinearLayout>

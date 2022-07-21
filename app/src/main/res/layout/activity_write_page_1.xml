@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="MainActivity">
+
+        <TextView
+            android:id="@+id/tagid"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="@color/background_white"
+            android:gravity="start"
+            android:padding="10px"
+            android:text="TAG ID : "
+            android:textAlignment="textStart"
+            android:textColor="@color/background_white"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tagid1"
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_alignLeft="@id/tagid"
+            android:layout_marginLeft="101dp"
+            android:textSize="50px"
+            android:textColor="@color/background_white"
+            android:layout_marginTop="3dp" />
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_below="@id/tagid1"
+            android:backgroundTint="@color/background_white"
+            android:hint="    ID"
+            android:textColor="@color/background_white"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColorHint="@color/background_white" />
+
+
+        <EditText
+            android:id="@+id/editText_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_white"
+            android:backgroundTint="@color/background_white"
+            android:textColorHint="@color/background_white"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/editText_id"
+            android:hint="Roll Number"/>
+
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_surname"
+            android:hint="Full Name"
+            android:textColor="@color/background_white"
+            android:textColorHint="@color/background_white"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/background_white"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editText_Marks"
+            android:layout_width="match_parent"
+            android:textColor="@color/background_white"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/background_white"
+            android:textColorHint="@color/background_white"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_name"
+            android:inputType="number"
+            android:hint="Marks"
+
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorprimary"
+            android:layout_below="@+id/editText_Marks"
+            android:id="@+id/btnSelectImage1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgView"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@color/background_white"
+                android:textColor="@color/colorprimary"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/imgView"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Select Image" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnSelectImage1"
+            android:text="Add Data"/>
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/button_add"
+            android:text="View"        />
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/button_view"
+            android:layout_below="@id/button_add"
+            android:text="View All"
+            />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/button_view"
+            android:text="Update"
+            />
+
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorprimary"
+            android:textColor="@color/background_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/button_view"
+            android:layout_toRightOf="@+id/button_update"
+            android:text="Delete"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>
